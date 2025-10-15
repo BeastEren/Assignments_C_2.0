@@ -1,0 +1,198 @@
+@font-face {
+    font-family: lol;
+    src: url(./fonts/autumn_crush/Autumn\ Crush.ttf);
+}
+
+@font-face {
+    font-family: lol2;
+    src: url(./fonts/winter_feast/Winter\ Feast.ttf);
+}
+
+@font-face {
+    font-family: lol3;
+    src: url(./fonts/maple_love/Maple\ Love.ttf);
+}
+
+@font-face {
+    font-family: lol4;
+    src: url(./fonts/warm_winter/Warm\ Winter.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: lol3;
+}
+
+p {
+    font-family: lol4;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    height: 200px;
+    background-color: #252554;
+    color: white;
+}
+
+.top h3 {
+    font-style: italic;
+    font-family: lol2;
+}
+
+.middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.aboutMe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    background-color: antiquewhite;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    height: 200px;
+    width: 90%;
+}
+
+#aboutme {
+    text-align: center;
+}
+
+.education {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    background-color: aqua;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    height: 200px;
+    width: 90%;
+}
+
+.education p {
+    background-color: white;
+    height: 40px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    background-color: rgb(229, 194, 151);
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    height: 300px;
+    width: 90%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.skills p {
+    background-color: white;
+    height: 60px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    background-color: rgb(180, 136, 221);
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    height: 250px;
+    width: 90%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.project p {
+    background-color: white;
+    height: 40px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-style: italic;
+}
+
+.contactMe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    background-color: rgb(173, 221, 173);
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    height: 300px;
+    width: 90%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.contactMe p {
+    background-color: white;
+    height: 60px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.foot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    text-transform: uppercase;
+    background-color: #252554;
+    color: white;
+}

@@ -1,0 +1,424 @@
+/* -----------------------------5-10-25------------------------------------ */
+
+@font-face {
+    font-family: textFont;
+    src: url(./SUSE_Mono/SUSEMono-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: textFont;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: gray;
+}
+
+.main {
+    user-select: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: auto;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
+h1,
+p {
+    color: #FAFAFA;
+}
+
+.card {
+    flex-shrink: 0;
+    height: 600px;
+    width: 350px;
+    background-color: #2F2F2F;
+    padding: .8rem;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    transform: translateY(0);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    height: 60%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 45px;
+}
+
+.card .txt-p,
+.ri-user-line,
+.ri-checkbox-multiple-fill {
+    color: #8C8C8C;
+}
+
+.detals-user {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+.txt {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    padding: 0 1rem 2rem;
+}
+
+.ri-verified-badge-fill {
+    color: #57E25A;
+    font-size: 2.2rem;
+}
+
+.name h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.foot button {
+    color: #FAFAFA;
+    background-color: #363636;
+    padding: .7rem 1.1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    border: 1px solid #57E25A;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transform: translateY(0);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.foot button:hover {
+    background-color: #57E25A;
+    color: #FAFAFA;
+    transform: translateY(0) scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.name,
+.people,
+.tick {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+}
+
+.foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bag {
+    height: 100%;
+    width: 100%;
+    background-position: top;
+    background-size: cover;
+    background-image: url(./images/anime_girl_pic.jpg);
+    border-radius: 45px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.txt-blur {
+    background: linear-gradient(to bottom,
+            rgba(255, 255, 255, 0),
+            /* light top */
+            rgba(255, 255, 255, 0.85)
+            /* deeper/denser bottom */
+        );
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+}
+
+.txt-blur p,
+.txt-blur .txt-p {
+    color: #363636;
+}
+
+.txt-blur h1,
+.txt-blur i {
+    color: #222222;
+}
+
+.txt-blur button {
+    background-color: #FAFAFA;
+    border: none;
+    color: #222222;
+}
+
+.txt-blur i {
+    transition: all 0.3s ease;
+}
+
+.txt-blur button:hover i {
+    color: #FAFAFA;
+}
+
+.foot .people,
+.foot .tick {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transform: translateY(0);
+}
+
+.foot .people:hover {
+    transform: translateY(-4px) scale(1.3);
+}
+
+.foot .tick:hover {
+    transform: translateY(-4px) scale(1.3);
+}
+
+/* ------------------------------5-10-25-------------------------------- */
+
+.card2 {
+    position: relative;
+    flex-shrink: 0;
+    height: 600px;
+    width: 400px;
+    background-color: #F6F5F8;
+    padding: .3rem;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    transform: translateY(0);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.card2:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+.coler,
+.info {
+    color: #222222;
+}
+
+.profile-pic {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    object-fit: cover;
+    object-position: top;
+    top: 30%;
+    left: 6%;
+    cursor: pointer;
+}
+
+.ri-circle-fill {
+    position: absolute;
+    font-size: 20px;
+    color: #57E25A;
+    border: 2px solid white;
+    border-radius: 50%;
+    top: 43%;
+    left: 22%;
+}
+
+.back-g {
+    height: 40%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 30px;
+}
+
+.card-details {
+    width: 100%;
+    height: 60%;
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info button {
+    padding: 0.4rem 0.8rem;
+    background-color: #F4F6FA;
+    border: 1px solid#57E25A;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: .8rem;
+}
+
+.name-detail {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.name-detail h1 {
+    font-size: 1.7rem;
+}
+
+.name-detail p {
+    font-size: 0.9rem;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.book-mark {
+    padding: 0.6rem 0.7rem;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    border: 1px solid gray;
+    font-weight: 100;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.book-mark:hover {
+    background-color: #7587ec;
+    transform: translateY(0) scale(1.2);
+}
+
+.line {
+    height: 40px;
+    width: 1px;
+    background-color: gray;
+}
+
+.info-detail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+.star-inside,
+.award-inside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ri-star-fill,
+.ri-award-fill {
+    font-size: 1.5rem;
+}
+
+.star,
+.award,
+.prise {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.theBUT {
+    width: 100%;
+    height: 20%;
+    border-radius: 50px;
+    border: none;
+    background-color: black;
+    color: #F6F5F8;
+    font-size: 1.2rem;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transform: translateY(0);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.theBUT:hover {
+    transform: translateY(0) scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.star-inside h1,
+.award-inside h1,
+.prise h1 {
+    font-size: 1.2rem;
+}
+
+.star p,
+.award p,
+.prise p {
+    font-size: 0.8rem;
+}
+
+/* --------------------------------6-10-25------------------------------- */
+.bag {
+    position: relative;
+    overflow: hidden;
+}
+
+.txt-blur {
+    position: absolute;
+    bottom: -18%;
+    transition: all 0.5s ease 0.12s;
+}
+
+.bag:hover .txt-blur {
+    bottom: 0%;
+}
+
+.txt-blur .detals-user .name {
+    position: absolute;
+    left: -80%;
+    top: 18%;
+    transition: all 0.5s ease 0.35s;
+}
+
+.bag:hover .txt-blur .detals-user .name {
+    left: 1rem;
+}
+
+.txt-blur .detals-user p {
+    position: absolute;
+    left: -85%;
+    top: 37%;
+    transition: all 0.5s ease 0.2s;
+}
+
+.bag:hover .txt-blur .detals-user p {
+    left: 1rem;
+}
+
+.txt-blur .name i {
+    cursor: pointer;
+}
+
+.txt-blur .name i:hover {
+    cursor: pointer;
+    color: #57E25A;
+}

@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+  background-color: rgb(167, 167, 167);
+}
+
+main {
+  height: calc(100vh - 80px);
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 50px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  display: grid;
+  grid-template-columns: 50% 1fr 1fr;
+  grid-template-rows: 10% 1fr 1fr;
+  grid-template-areas: "header header header" "section figureTop figureTop" "section figureLeft figureRight";
+  gap: 20px;
+}
+main header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main header .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main header .logo i {
+  font-size: 1.75rem;
+  color: #6f3ee2;
+}
+main header .logo h1 {
+  font-size: 1.5rem;
+  color: #000;
+}
+main header nav {
+  display: flex;
+  gap: 35px;
+  align-items: center;
+}
+main header nav a {
+  text-decoration: none;
+  color: #000;
+  font-size: 0.938rem;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+main header nav a:hover {
+  color: #8b5cf6;
+}
+main header .right-header {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+main header .right-header .log-in {
+  text-decoration: none;
+  color: #000;
+  font-size: 0.938rem;
+  font-weight: 500;
+}
+main header .right-header .lets-talk-but {
+  text-decoration: none;
+  color: #fff;
+  background-color: #1c202c;
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s;
+}
+main header .right-header .lets-talk-but i {
+  background-color: #bac3ff;
+  padding: 10px;
+  border-radius: 50%;
+  color: #2b313f;
+  transition: all 0.3s;
+}
+main header .right-header .lets-talk-but:hover {
+  background-color: #8b5cf6;
+}
+main header .right-header .lets-talk-but:hover i {
+  transform: rotate(45deg);
+}
+main section {
+  grid-area: section;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+main section .hero-top,
+main section .hero-middle,
+main section .hero-bottom {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+main section .hero-top h1,
+main section .hero-middle h1,
+main section .hero-bottom h1 {
+  font-size: 4.5rem;
+  font-weight: 400;
+  line-height: 1.1;
+  color: #000;
+  margin: 0;
+}
+main section .hero-top {
+  margin-bottom: 0;
+}
+main section .hero-top div {
+  width: 220px;
+  height: 60px;
+  background-image: url(./images/spiral.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 30px;
+  opacity: 0.8;
+  flex-shrink: 0;
+}
+main section .hero-middle {
+  margin-bottom: 0;
+}
+main section .hero-bottom {
+  align-items: center;
+}
+main section .hero-bottom button {
+  background-color: transparent;
+  border: 2px solid #000;
+  padding: 12px 28px;
+  border-radius: 25px;
+  font-size: 0.938rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+main section .hero-bottom button i {
+  font-size: 0.875rem;
+  transition: all 0.3s;
+}
+main section .hero-bottom button:hover {
+  background-color: #000;
+  color: #fff;
+}
+main section .hero-bottom button:hover i {
+  transform: rotate(-180deg);
+}
+main section .last-line {
+  font-size: 4.5rem;
+  font-weight: 400;
+  line-height: 1.1;
+  color: #000;
+  margin: 0;
+  margin-bottom: 20px;
+}
+main section .cta-group {
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+main section .cta-group a:nth-child(1) {
+  background-color: #1e233c;
+  color: #fff;
+  padding: 16px 32px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 0.938rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: background-color 0.3s;
+}
+main section .cta-group a:nth-child(1) i {
+  transition: all 0.3s;
+}
+main section .cta-group a:nth-child(1):hover {
+  background-color: #333;
+}
+main section .cta-group a:nth-child(1):hover i {
+  transform: rotate(45deg);
+}
+main section .cta-group a:nth-child(2) {
+  text-decoration: underline;
+  color: #000;
+  font-size: 0.938rem;
+  font-weight: 500;
+}
+main section .company-info {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  max-width: 450px;
+}
+main section .images {
+  display: flex;
+  gap: 45px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main section .images img {
+  height: 40px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main .figure-top {
+  grid-area: figureTop;
+  border-radius: 20px;
+  overflow: hidden;
+}
+main .figure-top img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .figure-left {
+  grid-area: figureLeft;
+  border-radius: 20px;
+  overflow: hidden;
+}
+main .figure-left img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .figure-right {
+  grid-area: figureRight;
+  border-radius: 20px;
+  overflow: hidden;
+}
+main .figure-right img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* Responsive *//*# sourceMappingURL=styles.css.map */

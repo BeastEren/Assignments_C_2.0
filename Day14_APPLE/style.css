@@ -1,0 +1,335 @@
+@font-face {
+    font-family: appleFontText;
+    src: url(./fonts/sf-pro-text_regular.woff2);
+}
+
+@font-face {
+    font-family: appleFontTextBold;
+    src: url(./fonts/sf-pro-text_semibold.woff2);
+}
+
+@font-face {
+    font-family: appleFontTextDisplay;
+    src: url(./fonts/sf-pro-display_regular.woff2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: appleFontText;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+a {
+    color: rgb(51, 47, 47);
+    text-decoration: none;
+    font-weight: 10;
+    font-size: 0.8rem;
+    user-select: none;
+}
+
+h1 {
+    font-weight: 900;
+    font-family: appleFontTextBold;
+}
+
+.nav {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+
+    background: linear-gradient(to bottom right,
+            rgba(255, 255, 255, 0.8),
+            rgba(255, 255, 255, 0.5));
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    /* for Safari */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+}
+
+.main1 {
+    margin-top: 3rem;
+    width: 100%;
+    height: 75%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(./images/hero_iphone_17_pro__bknyzxfk2agi_largetall.jpg);
+}
+
+.main1 {
+    padding-top: 2.5rem;
+    color: #fff;
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.main1 p {
+    padding-bottom: 5px;
+}
+
+.botton {
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1.2rem;
+}
+
+.botton1 {
+    color: #fff;
+    background-color: #0077ED;
+    border: none;
+    border-radius: 50px;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+}
+
+.botton2 {
+    color: #0077ED;
+    background-color: transparent;
+    border-color: #0077ED;
+    border-width: 1px;
+    border-radius: 50px;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    transition: .5s;
+}
+
+.botton2:hover {
+    color: #fff;
+    background-color: #0077ED;
+    border-color: #0077ED;
+    border-width: 1px;
+    border-radius: 50px;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+}
+
+.main2 {
+    width: 100%;
+    height: 75%;
+    margin-top: 0.8rem;
+    background-size: cover;
+    background-position: center;
+    background-image: url(./images/hero_iphone_air__0gxyavihpiqu_largetall.jpg);
+
+    padding-top: 2.5rem;
+    color: #000;
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.card {
+    height: 100%;
+    width: 100%;
+}
+
+.card .botton1 {
+    color: #fff;
+    background-color: #0077ED;
+    border: none;
+    border-radius: 50px;
+    padding: 0.6rem 1.3rem;
+    font-size: 0.8rem;
+}
+
+.card .botton2 {
+    color: #0077ED;
+    background-color: transparent;
+    border-color: #0077ED;
+    border-width: 1px;
+    border-radius: 50px;
+    padding: 0.6rem 1.3rem;
+    font-size: .8rem;
+    transition: .5s;
+}
+
+.card .botton2:hover {
+    color: #fff;
+    background-color: #0077ED;
+    border-color: #0077ED;
+    border-width: 1px;
+    border-radius: 50px;
+    padding: 0.6rem 1.3rem;
+    font-size: .8rem;
+}
+
+.main34 {
+    display: flex;
+    height: 65%;
+    width: 100%;
+    justify-content: space-evenly;
+    padding-top: 0.8rem;
+}
+
+.main3 {
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(./images/promo_iphone_17__bhofuohbsu3m_large.jpg);
+
+    padding-top: 2.5rem;
+    color: #000;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.main4 {
+    width: 48%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(./images/promo_airpodspro_3__f6xmza7bglei_large.jpg);
+
+    padding-top: 2.5rem;
+    color: #000;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.main56 {
+    display: flex;
+    height: 65%;
+    width: 100%;
+    justify-content: space-evenly;
+    padding-top: 0.8rem;
+}
+
+.main5 {
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(./images/promo_apple_watch_series_11__b63hxviqvonm_large.jpg);
+
+    padding-top: 2.5rem;
+    color: #000;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.main6 {
+    width: 48%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(./images/promo_apple_watch_se_3__fz5y29qx5mmy_large.jpg);
+
+    padding-top: 2.5rem;
+    color: #000;
+    text-align: center;
+    font-size: 1.2rem;
+
+}
+
+.bot {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.main78 {
+    display: flex;
+    height: 65%;
+    width: 100%;
+    justify-content: space-evenly;
+    padding-top: 0.8rem;
+}
+
+.main7 {
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(./images/promo_apple_watch_ultra3__bwvslhbxx99e_large.jpg);
+
+    padding-top: 2.5rem;
+    color: #000;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.main8 {
+    width: 48%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(./images/promo_iphone_tradein__bugw15ka691e_large.jpg);
+
+    padding-top: 2.5rem;
+    color: #000;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.blk {
+    color: #fff;
+}
+
+.titel {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.titel i {
+    font-size: 2.1rem;
+}
+
+.titel p {
+    font-size: 2.2rem;
+    font-weight: 0;
+}
+
+
+/* ------------------------------------------------------------------------- */
+.footer {
+    /* position: absolute; */
+    /* display: flex; */
+
+    padding: 1rem 24%;
+    width: 100%;
+    height: 100%;
+    background-color: #F5F5F7;
+}
+
+.all-ruls {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: .7rem;
+    font-family: appleFontTextDisplay;
+    color: gray;
+}
+
+.all-ruls a {
+    font-size: .7rem;
+    font-family: appleFontTextDisplay;
+    color: rgb(78, 77, 77);
+    text-decoration: underline;
+}

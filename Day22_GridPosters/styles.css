@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+main {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr;
+  grid-template-rows: 60% 40%;
+  grid-template-areas: "Left top top top" "Left bot1 bot2 bot3";
+  grid-gap: 1rem;
+}
+main section {
+  background-position: center;
+  background-size: cover;
+  border-radius: 1rem;
+  border: none;
+  background-color: beige;
+}
+main section:nth-child(1) {
+  grid-area: Left;
+  background-image: url(./images/entireParty.jpg);
+}
+main section:nth-child(2) {
+  grid-area: top;
+  background-image: url(./images/Himmel_Frieren2.0.jpg);
+}
+main section:nth-child(3) {
+  grid-area: bot1;
+  background-image: url(./images/Frieren.jpg);
+}
+main section:nth-child(4) {
+  grid-area: bot2;
+  background-image: url(./images/Fern.jpg);
+}
+main section:nth-child(5) {
+  grid-area: bot3;
+  background-image: url(./images/Stark.jpg);
+}
+
+@media screen and (max-width: 900px) {
+  main {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "Left Left Left" "top top top" "bot1 bot2 bot3";
+  }
+  main section:nth-child(1) {
+    background-image: url(./images/NewParty.jpg);
+  }
+  main section:nth-child(2) {
+    background-position: top;
+  }
+  main section:nth-child(4) {
+    background-image: url(./images/bigFern.jpg);
+  }
+  main section:nth-child(5) {
+    background-image: url(./images/bigStark.jpg);
+  }
+}
+@media screen and (max-width: 500px) {
+  main {
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "Left" "top" "bot1" "bot2" "bot3";
+  }
+  main section:nth-child(5) {
+    background-position: top;
+  }
+}/*# sourceMappingURL=styles.css.map */
