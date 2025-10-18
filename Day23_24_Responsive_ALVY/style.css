@@ -1,0 +1,720 @@
+@font-face {
+  font-family: txtp;
+  src: url(./fonts/63cffc20aa8997095067596f_Satoshi-Light.woff);
+}
+@font-face {
+  font-family: txth;
+  src: url(./fonts/63cffc0a3942456e003bc265_Chillax-Regular.woff);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 700;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #121212;
+  color: #fff;
+  font-size: clamp(8px, 1vw, 20px);
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  align-items: center;
+}
+main section,
+main footer {
+  max-width: 1920px;
+}
+main h1,
+main h2,
+main h3,
+main h4 {
+  font-family: txth;
+  letter-spacing: 0.2rem;
+  font-weight: 500;
+}
+main p {
+  font-family: txtp;
+}
+main nav {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+main nav .right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+main nav .right button:nth-child(1),
+main nav .right button:nth-child(2),
+main nav .right button:nth-child(3),
+main nav .right button:nth-child(4),
+main nav .right button:nth-child(5) {
+  display: none;
+}
+main nav .right .zero {
+  position: absolute;
+  right: 10%;
+  background-color: #CEBD63;
+  height: 2rem;
+  width: 2rem;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0.2rem;
+  padding-top: 0.1rem;
+}
+main nav .right button {
+  padding: 1rem 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1E1E1E;
+  color: white;
+  border: none;
+  border-radius: 0.7rem;
+  font-family: txtp;
+  letter-spacing: 0.2rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+main nav .right .CART {
+  padding-right: 3.5rem;
+  position: relative;
+}
+main nav .right .GIT {
+  border: none;
+  border-radius: 0.7rem;
+  background-color: #CEBD63;
+  color: #121212;
+}
+main nav .right .menu {
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: 100;
+  border-radius: 0.7rem;
+  background-color: #1E1E1E;
+}
+main .view1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+main .view1 .top {
+  width: 100%;
+}
+main .view1 .top img {
+  width: 100%;
+  border: none;
+  border-radius: 0.7rem;
+}
+main .view1 .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  background-color: #1E1E1E;
+  justify-content: space-between;
+  padding: 2rem;
+  border-radius: 0.7rem;
+  border: none;
+}
+main .view1 .bottom h4 {
+  font-size: 0.7rem;
+}
+main .view1 .bottom .txt {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  gap: 1rem;
+}
+main .view1 .bottom .txt h1 {
+  font-family: txth;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  text-transform: uppercase;
+}
+main .view1 .bottom .txt p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: gray;
+}
+main .view1 .bottom .txt .below {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+main .view1 .bottom .txt .below .downArrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 1px solid gray;
+  background-color: #1E1E1E;
+}
+main .view1 .bottom .txt .below h4 {
+  word-spacing: 5px;
+  letter-spacing: 0.3rem;
+}
+main .view2 {
+  width: 100%;
+  padding: 2rem 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "clients projects " "happy-clients followers";
+  grid-gap: 1rem;
+}
+main .view2 p {
+  word-spacing: 5px;
+  color: gray;
+  font-size: 1.5rem;
+}
+main .view2 h1 {
+  font-size: 4rem;
+}
+main .view2 .clients {
+  grid-area: clients;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+}
+main .view2 .projects {
+  grid-area: projects;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+}
+main .view2 .happy-clients {
+  grid-area: happy-clients;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+}
+main .view2 .followers {
+  grid-area: followers;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+}
+main .view3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+main .view3 .top1 {
+  grid-area: top-1;
+  border-radius: 0.7rem;
+  border: none;
+}
+main .view3 .mid-bottom {
+  grid-area: mid-bottom;
+  border-radius: 0.7rem;
+  border: none;
+}
+main .view3 img {
+  width: 100%;
+  border: none;
+  border-radius: 0.7rem;
+}
+main .view3 .mid-top,
+main .view3 .bottom1 {
+  grid-area: mid-top;
+  background-color: #1E1E1E;
+  padding: 3rem;
+  border-radius: 0.7rem;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  gap: 5rem;
+  justify-content: space-between;
+}
+main .view3 .bottom1 {
+  grid-area: bottom-1;
+}
+main .view3 .bottom1 > p,
+main .view3 .mid-top > p {
+  -moz-column-count: 1;
+       column-count: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+main .view3 .txt {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  gap: 1rem;
+}
+main .view3 .txt h1 {
+  font-family: txth;
+  font-size: 2.8rem;
+  line-height: 3rem;
+  text-transform: uppercase;
+}
+main .view3 .txt p {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: gray;
+}
+main .view4 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+}
+main .view4 .find-job {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+main .view4 .find-job .simbol {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 1px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+main .view4 .find-job h4 {
+  word-spacing: 5px;
+  letter-spacing: 0.3rem;
+}
+main .cards {
+  width: 100%;
+  padding: 0rem 1rem;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .cards .card {
+  width: 100%;
+  padding: 2rem 2rem;
+  aspect-ratio: 1/1;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  justify-content: space-between;
+  border: none;
+  border-radius: 0.7rem;
+}
+main .cards .card .top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+main .cards .card .top .icons {
+  width: 40px;
+  height: 40px;
+  margin-right: 0.5rem;
+  background-color: rgba(85, 84, 84, 0.479);
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  border: 1px solid white;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+main .cards .card .top .icons i {
+  font-weight: 100;
+}
+main .cards .card .bot {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 1rem;
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.144);
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  border: 1px solid rgba(228, 225, 225, 0.253);
+  border-radius: 0.7rem;
+}
+main .cards .card:nth-child(1) {
+  background-image: url(./images/63d2ccbd7d003dfb6a1bdecb_team-01-p-1080.webp);
+}
+main .cards .card:nth-child(2) {
+  background-image: url(./images/63d2ccbd2e12fa747e999689_team-02-p-1080.webp);
+}
+main .cards .card:nth-child(3) {
+  background-image: url(./images/63d2ccbdc1f945f817bf4fd7_team-03-p-1080.webp);
+}
+main .card-2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+main .card-2 img {
+  width: 100%;
+  border: none;
+  border-radius: 0.7rem;
+}
+main .card-2 .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  background-color: #1E1E1E;
+  justify-content: space-between;
+  padding: 2rem;
+  border-radius: 0.7rem;
+  border: none;
+}
+main .card-2 .bottom p {
+  color: gray;
+  font-size: 1.5rem;
+}
+main .card-2 .bottom h1 {
+  margin-top: 1rem;
+  font-size: 4rem;
+}
+main .card-2 .bottom .find-job {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+main .card-2 .bottom .find-job .simbol {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 1px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+main .card-2 .bottom .find-job h4 {
+  word-spacing: 5px;
+  letter-spacing: 0.3rem;
+}
+main .contact {
+  width: 100%;
+  padding: 0rem 1rem;
+}
+main .contact .contaner {
+  padding: 3rem;
+  background-color: #CEBD63;
+  color: black;
+  border: none;
+  border-radius: 0.7rem;
+}
+main .contact .contaner p {
+  letter-spacing: 0.4rem;
+}
+main .contact .contaner .txt {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  justify-content: space-between;
+}
+main .contact .contaner .txt h1 {
+  font-size: 3rem;
+  font-family: txth;
+}
+main .contact .contaner .txt button {
+  background-color: #121212;
+  color: white;
+  border: none;
+  border-radius: 0.7rem;
+  padding: 1rem 1.2rem;
+  font-weight: 400;
+  font-family: txtp;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+}
+main .footer {
+  width: 100%;
+  padding: 1rem;
+  text-transform: uppercase;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 1fr 0.2fr;
+  grid-template-areas: "left" "top" "bottom";
+}
+main .footer .left,
+main .footer .top,
+main .footer .bottom {
+  background-color: #1E1E1E;
+  border-radius: 0.7rem;
+  border: none;
+  padding: 3rem;
+}
+main .footer .left {
+  grid-area: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .footer .left .left-top {
+  font-size: 1.5rem;
+  margin-bottom: 10rem;
+}
+main .footer .left .left-bot {
+  display: flex;
+  gap: 1rem;
+}
+main .footer .left .left-bot .icons {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(85, 84, 84, 0.479);
+  border: 1px solid white;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+main .footer .left .left-bot .icons i {
+  font-weight: 100;
+}
+main .footer .top {
+  grid-area: top;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "pages cms utility-pages";
+  grid-gap: 3rem;
+}
+main .footer .top h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+main .footer .top a {
+  font-size: 1.2rem;
+  color: gray;
+  text-decoration: none;
+  cursor: pointer;
+}
+main .footer .top .pages {
+  grid-area: pages;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .footer .top .pages button {
+  margin-top: 0.5rem;
+  padding: 1rem 0.8rem;
+  max-width: 14rem;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 300;
+  background-color: #CEBD63;
+  color: #121212;
+  border: none;
+  border-radius: 0.7rem;
+  cursor: pointer;
+}
+main .footer .top .cms {
+  grid-area: cms;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .footer .top .utility-pages {
+  grid-area: utility-pages;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .footer .bottom {
+  grid-area: bottom;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  align-items: center;
+  justify-content: center;
+}
+main .footer .bottom p {
+  font-size: 1.5rem;
+}
+main .footer .bottom .left {
+  display: flex;
+}
+main .footer .bottom .left p {
+  font-size: 1.5rem;
+  color: gray;
+}
+main .footer .bottom .left p > a {
+  text-decoration: underline;
+  color: white;
+  cursor: pointer;
+}
+main .footer .bottom .right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+main .footer .bottom .right .icons {
+  width: 40px;
+  height: 40px;
+  margin-right: 0.5rem;
+  background-color: rgba(85, 84, 84, 0.479);
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  border: 1px solid white;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+main .footer .bottom .right .icons i {
+  font-weight: 100;
+}
+
+@media (min-width: 850px) {
+  main nav .right button:nth-child(1),
+  main nav .right button:nth-child(2),
+  main nav .right button:nth-child(3),
+  main nav .right button:nth-child(4),
+  main nav .right button:nth-child(5) {
+    display: block;
+  }
+  main nav .right .menu {
+    display: none;
+  }
+  main .view1 {
+    flex-direction: row;
+  }
+  main .view1 .top {
+    width: 50%;
+  }
+  main .view1 .bottom {
+    width: 50%;
+    padding: 4rem;
+  }
+  main .view1 .bottom .txt h1 {
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+  main .view1 .bottom .txt p {
+    width: 70%;
+  }
+  main .view2 {
+    padding: 3rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  main .view3 {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "mid-top top-1 " "mid-bottom bottom-1";
+  }
+  main .view3 .top1,
+  main .view3 .mid-bottom {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .view3 .txt p {
+    -moz-column-count: 2;
+         column-count: 2;
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
+  }
+  main .cards {
+    flex-direction: row;
+  }
+  main .cards .card .top {
+    gap: 0.5rem;
+  }
+  main .card-2 {
+    flex-direction: row;
+  }
+  main .card-2 img {
+    width: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .card-2 .bottom {
+    width: 50%;
+    padding: 4rem;
+  }
+  main .card-2 .bottom .txt h1 {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+  main .contact .contaner p {
+    letter-spacing: 0.4rem;
+  }
+  main .contact .contaner .txt {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  main .contact .contaner .txt h1 {
+    font-size: 5rem;
+  }
+  main .contact .contaner .txt button {
+    width: 30rem;
+  }
+  main .footer {
+    grid-template-columns: 0.3fr 0.7fr;
+    grid-template-rows: 0.8fr 0.2fr;
+    grid-template-areas: "left top top" "left bottom bottom";
+  }
+  main .footer .bottom {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  main .footer .bottom .left p {
+    font-size: 1rem;
+  }
+  main .footer .bottom .right p {
+    font-size: 1rem;
+  }
+  main .footer .bottom .right .icons {
+    font-size: 1.5rem;
+  }
+}/*# sourceMappingURL=style.css.map */
