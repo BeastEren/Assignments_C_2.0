@@ -572,10 +572,12 @@ main {
         .top {
             grid-area: top;
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
             grid-template-areas:
-                "pages cms utility-pages"
+                "pages"
+                "cms"
+                "utility-pages"
             ;
             grid-gap: 3rem;
 
@@ -669,6 +671,20 @@ main {
                         font-weight: 100;
                     }
                 }
+            }
+        }
+    }
+}
+
+@media(min-width:500px) {
+    main {
+        .footer {
+            .top {
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr;
+                grid-template-areas:
+                    "pages cms utility-pages"
+                ;
             }
         }
     }

@@ -519,9 +519,9 @@ main .footer .left .left-bot .icons i {
 main .footer .top {
   grid-area: top;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "pages cms utility-pages";
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "pages" "cms" "utility-pages";
   grid-gap: 3rem;
 }
 main .footer .top h3 {
@@ -613,6 +613,13 @@ main .footer .bottom .right .icons i {
   font-weight: 100;
 }
 
+@media (min-width: 500px) {
+  main .footer .top {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "pages cms utility-pages";
+  }
+}
 @media (min-width: 850px) {
   main nav .right button:nth-child(1),
   main nav .right button:nth-child(2),
