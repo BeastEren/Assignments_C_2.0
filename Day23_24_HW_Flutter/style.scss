@@ -30,6 +30,12 @@ html {
     }
 }
 
+// nav,
+// footer, 
+section {
+    max-width: 1920px;
+}
+
 
 nav {
     width: 100%;
@@ -187,12 +193,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    section,
-    footer {
-        max-width: 1920px;
-    }
-
 
     #view1 {
         width: 100%;

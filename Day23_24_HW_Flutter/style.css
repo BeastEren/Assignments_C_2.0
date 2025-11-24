@@ -27,6 +27,10 @@ html a {
   color: #4a4a4a;
 }
 
+section {
+  max-width: 1920px;
+}
+
 nav {
   width: 100%;
   position: fixed;
@@ -155,10 +159,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-main section,
-main footer {
-  max-width: 1920px;
 }
 main #view1 {
   width: 100%;

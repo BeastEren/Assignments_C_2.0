@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+    padding: 2rem;
+}
+
+#job-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: #fff;
+    padding: 1.4rem;
+    border-radius: 18px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.08);
+    transition: .2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.logo img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #696969;
+    object-fit: cover;
+}
+
+.save {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 4px 8px;
+    font-size: 0.8rem;
+    color: #555;
+    cursor: pointer;
+    user-select: none;
+}
+
+.card h3 {
+    margin: .6rem 0;
+    font-size: 1.1rem;
+}
+
+.card .company {
+    font-size: 1.2rem;
+}
+
+.card .posted {
+    opacity: .6;
+    font-size: 0.7rem;
+}
+
+.tags {
+    margin: .6rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .4rem;
+    margin-bottom: 6rem;
+}
+
+.tag {
+    background: #eee;
+    padding: 6px 10px;
+    border-radius: 8px;
+    font-size: 0.75rem;
+}
+
+.bottom-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #eee;
+    padding-top: 2rem;
+}
+
+.salary {
+    font-weight: 600;
+}
+
+.location {
+    margin-top: 4px;
+    opacity: .6;
+    font-size: 0.6rem;
+}
+
+.apply-btn {
+    padding: 8px 15px;
+    background: black;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    transition: all .2s ease;
+    user-select: none;
+}
+
+.apply-btn:active {
+    transform: scale(0.95);
+}
